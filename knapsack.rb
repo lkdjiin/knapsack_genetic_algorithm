@@ -134,16 +134,16 @@ class GeneticAlgorithm
 
   private
 
-  def display(generation, best)
-    puts "Gen: #{generation} Best score: #{best.score}"
+  def display(generation, individual)
+    puts "Gen: #{generation} Best score: #{individual.score}"
   end
 
-  def display_best_ever(indi)
+  def display_best_ever(individual)
     puts "----------------------"
     puts "Best ever"
     puts "----------------------"
-    puts "score:      #{indi.score}"
-    puts "chromosome: #{indi.chromosome_as_list}"
+    puts "score:      #{individual.score}"
+    puts "chromosome: #{individual.chromosome_as_list}"
   end
 
   def next_generation
