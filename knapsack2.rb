@@ -126,7 +126,7 @@ class GeneticAlgorithm
       Evaluator.new(@capacity, @population).evaluate
       best = @population.best
       best_ever = best if best > best_ever
-      display(generation, best_ever)
+      display(generation, best)
       next_generation
     end
     display_best_ever(best_ever)
@@ -148,7 +148,7 @@ class GeneticAlgorithm
 
   def next_generation
     @population.sort_by! {|i| i.score}
-    elite = @population.slice! 0, 4
+    elite = @population.pop(4)
     pool = MatingPool.new(@population)
     population_size = @population.size
     @population.clear
