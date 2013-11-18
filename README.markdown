@@ -7,6 +7,11 @@ This is some genetic algorithms I wrote in Ruby for the knapsack problem.
 All the code is a support for a series of blog post (in french) on
 [lkdjiin.github.io](http://lkdjiin.github.io/).
 
+### knapsack.rb
+Original algorithm.
+
+### knapsack2.rb
+Add elitism.
 
 Install
 -------------------------
@@ -15,7 +20,7 @@ Just download the files…
 
 Usage
 --------------------------
-Type `ruby knapsack.rb`.
+Type `ruby knapsack.rb` or whatever file you want.
 
 
 Dependencies
