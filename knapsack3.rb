@@ -96,11 +96,10 @@ class Evaluator
       end
     end
     if weight > @capacity
-      individual.score = value - 2 * (weight - @capacity)
-      individual.score = 0 if individual.score < 0
-    else
-      individual.score = value
+      value -= 2 * (weight - @capacity)
+      value = 0 if value < 0
     end
+    individual.score = value
   end
 
   def fitness
