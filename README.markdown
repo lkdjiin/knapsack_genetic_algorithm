@@ -13,6 +13,9 @@ Original algorithm.
 ### knapsack2.rb
 Add elitism.
 
+### knapsack3.rb
+Take into account invalid individuals.
+
 Install
 -------------------------
 Just download the files…
