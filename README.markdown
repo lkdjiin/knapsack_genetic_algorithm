@@ -16,6 +16,10 @@ Add elitism.
 ### knapsack3.rb
 Take into account invalid individuals.
 
+### invest.rb
+An investment problem. This is a knapsack with multiple items.
+It requires Ruby 2.1.
+
 Install
 -------------------------
 Just download the files…
